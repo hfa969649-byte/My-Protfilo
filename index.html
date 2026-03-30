@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohamed Alaa | IT Student & Developer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body data-page="home">
+
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">M<span class="dot">.</span>Alaa</a>
+
+      <ul class="nav-links">
+        <li><a href="index.html" data-page="home" class="nav-link">Home</a></li>
+        <li><a href="about.html" data-page="about" class="nav-link">About</a></li>
+        <li><a href="projects.html" data-page="projects" class="nav-link">Projects</a></li>
+        <li><a href="contact.html" data-page="contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button id="themeToggle" aria-label="Toggle theme" class="icon-btn">
+          <svg id="sunIcon" class="w16 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707M17.657 17.657l-.707-.707M6.343 6.343l-.707-.707M12 8a4 4 0 100 8 4 4 0 000-8z" />
+          </svg>
+          <svg id="moonIcon" class="w16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+          </svg>
+        </button>
+        <button id="menuToggle" aria-label="Open menu" aria-expanded="false" class="icon-btn hamburger">
+          <span class="hline"></span>
+          <span class="hline"></span>
+          <span class="hline short"></span>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobileMenu" class="mobile-menu">
+      <a href="index.html" data-page="home" class="mob-link">Home</a>
+      <a href="about.html" data-page="about" class="mob-link">About</a>
+      <a href="projects.html" data-page="projects" class="mob-link">Projects</a>
+      <a href="contact.html" data-page="contact" class="mob-link">Contact</a>
+    </div>
+  </nav>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-bg"></div>
+      <div class="orb orb1"></div>
+      <div class="orb orb2"></div>
+      <div class="orb orb3"></div>
+      <div class="hero-grid"></div>
+
+      <div class="container hero-content">
+        <div class="reveal badge-wrap">
+          <span class="pulse-dot"></span>
+          <span class="badge-text">Available for work</span>
+        </div>
+
+        <div class="reveal d1">
+          <h1 class="hero-name">
+            <span class="name-fill">Mohamed</span>
+            <span class="name-stroke">Alaa</span>
+          </h1>
+        </div>
+
+        <div class="reveal d2">
+          <div class="roles-strip">
+            <span>IT Student</span>
+            <span class="rsep">◆</span>
+            <span>Frontend Developer</span>
+            <span class="rsep">◆</span>
+            <span>Godot Game Dev</span>
+          </div>
+        </div>
+
+        <p class="reveal d3 hero-tagline">
+          Building responsive websites &amp; 2D games with<br class="br-sm" />
+          clean code, bold design, and real passion.
+        </p>
+
+        <div class="reveal d4 cta-row">
+          <a href="projects.html" class="btn-red">View My Work ↓</a>
+          <a href="contact.html" class="btn-ghost">Get In Touch</a>
+        </div>
+
+        <div class="reveal d5 stats-bar">
+          <div class="stat">
+            <span class="snum">4</span>
+            <span class="slabel">Projects Built</span>
+          </div>
+          <span class="sdiv"></span>
+          <div class="stat">
+            <span class="snum">2nd</span>
+            <span class="slabel">Year IT Student</span>
+          </div>
+          <span class="sdiv"></span>
+          <div class="stat">
+            <span class="snum">5+</span>
+            <span class="slabel">Tech Skills</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-cue">
+        <div class="scroll-bar"></div>
+        <span>scroll</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grad"></div>
+    <div class="container footer-inner">
+      <p class="fcopy">© 2026 <span class="fname-grad">Mohamed Alaa</span>. All rights reserved.</p>
+      <p class="fbuilt">Built with HTML · Tailwind CSS · JavaScript</p>
+    </div>
+  </footer>
+
+  <button id="backToTop" class="btt" aria-label="Back to top">
+    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="20" height="20">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 15l7-7 7 7" />
+    </svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>

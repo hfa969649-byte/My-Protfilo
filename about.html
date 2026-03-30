@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Mohamed Alaa</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body data-page="about">
+
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">M<span class="dot">.</span>Alaa</a>
+
+      <ul class="nav-links">
+        <li><a href="index.html" data-page="home" class="nav-link">Home</a></li>
+        <li><a href="about.html" data-page="about" class="nav-link">About</a></li>
+        <li><a href="projects.html" data-page="projects" class="nav-link">Projects</a></li>
+        <li><a href="contact.html" data-page="contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button id="themeToggle" aria-label="Toggle theme" class="icon-btn">
+          <svg id="sunIcon" class="w16 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707M17.657 17.657l-.707-.707M6.343 6.343l-.707-.707M12 8a4 4 0 100 8 4 4 0 000-8z" />
+          </svg>
+          <svg id="moonIcon" class="w16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+          </svg>
+        </button>
+        <button id="menuToggle" aria-label="Open menu" aria-expanded="false" class="icon-btn hamburger">
+          <span class="hline"></span>
+          <span class="hline"></span>
+          <span class="hline short"></span>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobileMenu" class="mobile-menu">
+      <a href="index.html" data-page="home" class="mob-link">Home</a>
+      <a href="about.html" data-page="about" class="mob-link">About</a>
+      <a href="projects.html" data-page="projects" class="mob-link">Projects</a>
+      <a href="contact.html" data-page="contact" class="mob-link">Contact</a>
+    </div>
+  </nav>
+
+  <main class="page-shell">
+    <section id="about" class="about">
+      <div class="about-top-fade"></div>
+
+      <div class="container about-grid">
+        <div class="reveal avatar-col">
+          <div class="avatar-card">
+            <div class="av-glow"></div>
+            <div class="av-circle">
+              <span class="av-initials">MA</span>
+            </div>
+            <div class="av-chip chip-a">HTML / CSS</div>
+            <div class="av-chip chip-b">JavaScript</div>
+            <div class="av-chip chip-c">Godot 4</div>
+          </div>
+          <div class="open-badge">🚀 Open to work</div>
+        </div>
+
+        <div class="reveal d1 bio-col">
+          <div class="sec-label">
+            <span class="sec-line"></span>About Me<span class="sec-line"></span>
+          </div>
+
+          <h2 class="about-h2">
+            Passionate about<br />
+            <span class="grad-red">web craft</span> &amp; <span class="grad-purple">game dev</span>
+          </h2>
+
+          <p class="bio-text">
+            I'm <strong>Mohamed Alaa</strong>, a second-year IT student specialising in Web Programming
+            at a Technical Applied Technology school. I love building real, functional projects — from
+            food sites and furniture stores, to 2D games built in <strong>Godot 4</strong>.
+          </p>
+          <p class="bio-text mt2">
+            Every project pushes my skills further. I focus on clean structure, responsive layouts,
+            and smooth interactivity — making sure every detail feels right.
+          </p>
+
+          <div class="pills">
+            <span class="pill">HTML5</span>
+            <span class="pill">CSS3</span>
+            <span class="pill">JavaScript</span>
+            <span class="pill">Bootstrap</span>
+            <span class="pill">Tailwind CSS</span>
+            <span class="pill">Godot 4</span>
+            <span class="pill">GDScript</span>
+            <span class="pill">Git &amp; GitHub</span>
+          </div>
+
+          <div class="skill-bars">
+            <div class="skbar" data-pct="90">
+              <div class="skbar-head"><span>HTML &amp; CSS</span><span>90%</span></div>
+              <div class="skbar-track"><div class="skbar-fill fill-red"></div></div>
+            </div>
+            <div class="skbar" data-pct="82">
+              <div class="skbar-head"><span>JavaScript</span><span>82%</span></div>
+              <div class="skbar-track"><div class="skbar-fill fill-red"></div></div>
+            </div>
+            <div class="skbar" data-pct="88">
+              <div class="skbar-head"><span>Bootstrap</span><span>88%</span></div>
+              <div class="skbar-track"><div class="skbar-fill fill-orange"></div></div>
+            </div>
+            <div class="skbar" data-pct="85">
+              <div class="skbar-head"><span>Tailwind CSS</span><span>85%</span></div>
+              <div class="skbar-track"><div class="skbar-fill fill-orange"></div></div>
+            </div>
+            <div class="skbar" data-pct="72">
+              <div class="skbar-head"><span>Godot 4 / GDScript</span><span>72%</span></div>
+              <div class="skbar-track"><div class="skbar-fill fill-purple"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-bot-fade"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grad"></div>
+    <div class="container footer-inner">
+      <p class="fcopy">© 2026 <span class="fname-grad">Mohamed Alaa</span>. All rights reserved.</p>
+      <p class="fbuilt">Built with HTML · Tailwind CSS · JavaScript</p>
+    </div>
+  </footer>
+
+  <button id="backToTop" class="btt" aria-label="Back to top">
+    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="20" height="20">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 15l7-7 7 7" />
+    </svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>

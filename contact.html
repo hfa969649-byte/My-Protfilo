@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Mohamed Alaa</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body data-page="contact">
+
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">M<span class="dot">.</span>Alaa</a>
+
+      <ul class="nav-links">
+        <li><a href="index.html" data-page="home" class="nav-link">Home</a></li>
+        <li><a href="about.html" data-page="about" class="nav-link">About</a></li>
+        <li><a href="projects.html" data-page="projects" class="nav-link">Projects</a></li>
+        <li><a href="contact.html" data-page="contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button id="themeToggle" aria-label="Toggle theme" class="icon-btn">
+          <svg id="sunIcon" class="w16 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707M17.657 17.657l-.707-.707M6.343 6.343l-.707-.707M12 8a4 4 0 100 8 4 4 0 000-8z" />
+          </svg>
+          <svg id="moonIcon" class="w16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+          </svg>
+        </button>
+        <button id="menuToggle" aria-label="Open menu" aria-expanded="false" class="icon-btn hamburger">
+          <span class="hline"></span>
+          <span class="hline"></span>
+          <span class="hline short"></span>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobileMenu" class="mobile-menu">
+      <a href="index.html" data-page="home" class="mob-link">Home</a>
+      <a href="about.html" data-page="about" class="mob-link">About</a>
+      <a href="projects.html" data-page="projects" class="mob-link">Projects</a>
+      <a href="contact.html" data-page="contact" class="mob-link">Contact</a>
+    </div>
+  </nav>
+
+  <main class="page-shell">
+    <section id="contact" class="contact">
+      <div class="contact-top-fade"></div>
+
+      <div class="container contact-grid">
+        <div class="reveal contact-info">
+          <div class="sec-label">
+            <span class="sec-line"></span>Contact<span class="sec-line"></span>
+          </div>
+
+          <h2 class="contact-h2">
+            Let's build<br /><span class="grad-red">something great</span>
+          </h2>
+          <p class="contact-sub">
+            Looking for internship and freelance opportunities.<br />
+            Have a project idea? Let's make it happen.
+          </p>
+
+          <div class="info-cards">
+            <div class="icard" style="background:linear-gradient(135deg,#1a0005,#5a0010)">
+              <span class="icard-icon">✉</span>
+              <div>
+                <p class="icard-label">Email</p>
+                <p class="icard-val">hfa969649@gmail.com</p>
+              </div>
+            </div>
+            <div class="icard" style="background:linear-gradient(135deg,#0a1a00,#1a4a00)">
+              <span class="icard-icon">📍</span>
+              <div>
+                <p class="icard-label">Location</p>
+                <p class="icard-val">Cairo, Egypt</p>
+              </div>
+            </div>
+            <div class="icard" style="background:linear-gradient(135deg,#12000a,#3d0020)">
+              <span class="icard-icon">🔗</span>
+              <div>
+                <p class="icard-label">Socials</p>
+                <div class="social-row">
+                  <a href="#" class="soc-link">GitHub</a>
+                  <a href="#" class="soc-link">LinkedIn</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal d1">
+          <form id="contactForm" class="cform" novalidate action="https://formsubmit.co/hfa969649@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="New portfolio contact form submission" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_replyto" id="replyToField" value="" />
+            <div class="form2">
+              <div class="fgrp">
+                <label for="fname">Full Name</label>
+                <input id="fname" name="name" type="text" placeholder="Your name" />
+                <p class="ferr hidden" id="fnameErr">Please enter your name.</p>
+              </div>
+              <div class="fgrp">
+                <label for="femail">Email</label>
+                <input id="femail" name="email" type="email" placeholder="your@email.com" />
+                <p class="ferr hidden" id="femailErr">Please enter a valid email.</p>
+              </div>
+            </div>
+            <div class="fgrp">
+              <label for="fsubject">Subject</label>
+              <input id="fsubject" name="subject" type="text" placeholder="What's this about?" />
+            </div>
+            <div class="fgrp">
+              <label for="fmsg">Message</label>
+              <textarea id="fmsg" name="message" rows="5" placeholder="Tell me about your project…"></textarea>
+              <p class="ferr hidden" id="fmsgErr">Please write your message.</p>
+            </div>
+            <button type="submit" id="submitBtn" class="fsend">Send Message ↗</button>
+            <div id="formSuccess" class="fsuccess hidden">✓ Message sent to my inbox! I'll get back to you soon.</div>
+            <p class="form-note">Draft is saved automatically in this browser with localStorage.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grad"></div>
+    <div class="container footer-inner">
+      <p class="fcopy">© 2026 <span class="fname-grad">Mohamed Alaa</span>. All rights reserved.</p>
+      <p class="fbuilt">Built with HTML · Tailwind CSS · JavaScript</p>
+    </div>
+  </footer>
+
+  <button id="backToTop" class="btt" aria-label="Back to top">
+    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="20" height="20">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 15l7-7 7 7" />
+    </svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
