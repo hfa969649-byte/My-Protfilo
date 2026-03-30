@@ -10,11 +10,11 @@ A responsive multi-page portfolio website built with **HTML**, **CSS**, and **Ja
 
 ## Live Demo
 Add your deployed link here:
-`https://your-live-demo-link`
+`[https://your-live-demo-link](https://hfa969649-byte.github.io/My-Protfilo/)`
 
 ## GitHub Repository
 Add your repo link here:
-`https://github.com/your-username/your-repo`
+`[https://github.com/your-username/your-repo](https://github.com/hfa969649-byte/My-Protfilo)`
 
 ## Technologies Used
 - HTML5
